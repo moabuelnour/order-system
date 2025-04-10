@@ -67,8 +67,12 @@ backend systems.
    Update `.env` with database, mail, and queue settings:
 
    ```env
-   DB_CONNECTION=sqlite
-   DB_DATABASE=/path/to/database.sqlite
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=food-order
+   DB_USERNAME=your-database-username
+   DB_PASSWORD=your-adatabase-password
 
    MAIL_MAILER=smtp
    MAIL_HOST=smtp.mailtrap.io
@@ -101,11 +105,9 @@ backend systems.
    php artisan db:seed
    ```
 
-7. **Set Up Queue (for email alerts)**:
+7. **Start Up Queue**:
 
    ```bash
-   php artisan queue:table
-   php artisan migrate
    php artisan queue:work
    ```
 
