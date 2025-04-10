@@ -46,7 +46,7 @@ backend systems.
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/order-processing-system.git
+   git clone git@github.com:moabuelnour/order-system.git
    cd order-processing-system
    ```
 
