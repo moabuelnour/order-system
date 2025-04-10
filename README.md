@@ -163,7 +163,7 @@ order data.
 ```json
 {
     "data" {
-        id": 1,
+        "id": 1,
         "products": [
             {
                 "product_id": 1,
